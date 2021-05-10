@@ -1,0 +1,13 @@
+@value blue, darkBlue from '@styles/colors.css';
+
+.hint {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 25pt;
+    color: blue;
+}
+
+.hint:hover {
+    cursor: pointer;
+    color: darkBlue;
+}

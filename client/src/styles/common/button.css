@@ -1,0 +1,15 @@
+@value white, blue, darkBlue from '@styles/colors.css';
+
+.button {
+    padding: 0 15pt;
+    height: 25pt;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: blue;
+}
+
+.button:hover {
+    background-color: darkBlue;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}

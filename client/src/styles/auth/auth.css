@@ -1,0 +1,43 @@
+@value blue, gray from '@styles/colors.css';
+@value align, mt30 from '@styles/style.css';
+@value button as commonButton from '@styles/common/button.css';
+@value hint as commonHint from '@styles/common/hint.css';
+
+.form {
+    composes: align;
+    border-radius: 5px;
+    padding: 30pt 30pt;
+    border: 1px solid gray;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10pt;
+}
+
+.input {
+    height: 30pt;
+    width: 150pt;
+    margin-top: 5pt;
+    padding: 0 10pt;
+    border-radius: 5pt;
+    border: 1px solid gray;
+    font-size: 10pt;
+}
+
+.input:focus {
+    outline: none;
+    border: 2px solid blue;
+}
+
+.hint {
+    composes: commonHint;
+    float: left;
+}
+
+.button {
+    composes: commonButton;
+    float: right;
+}
