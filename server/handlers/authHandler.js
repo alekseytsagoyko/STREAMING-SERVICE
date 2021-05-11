@@ -20,7 +20,7 @@ exports.login = async function (req, res) {
 
     const token = generateAccessToken(user._id, user.roles);
 
-    return res.json({ token });
+    return res.json({ id: user._id, token });
 
 };
 
@@ -41,3 +41,9 @@ exports.registration = async function (req, res) {
     return res.json({ message: "User successfully registered." });
 
 };
+
+/*
+exports.verify = async (req, res) => {
+
+};
+*/

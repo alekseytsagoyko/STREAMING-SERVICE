@@ -1,30 +1,16 @@
 import React from 'react';
+import Header from "@components/main/header/Header";
+import Container from "@components/main/container/Container";
+import styles from '@styles/main/main.css';
 
 function Main() {
 
-    const [file, setFile] = React.useState(null);
-
-    const sendFile = function (event) {
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", "http://localhost:3000/file", true);
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState != 4) return;
-
-            if (xhr.status == 200) {
-                console.log(xhr.responseText);
-            }
-        };
-
-        let data = new FormData();
-        data.append('file', event.target.files[0]);
-
-        xhr.send(data);
-    }
-
-    return <div>
-        <input type="file" onChange={sendFile}/>
-    </div>;
-
+    return (
+        <div className={styles.main}>
+            <Header />
+            <Container />
+        </div>
+    );
 }
 
 export default Main;
