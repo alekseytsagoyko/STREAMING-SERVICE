@@ -1,0 +1,32 @@
+@value flexAlign from '@styles/style.css';
+@value gray, fontColor from '@styles/colors.css';
+
+.profile {
+    composes: flexAlign;
+    width: 35pt;
+    flex-basis: 35pt;
+}
+
+.container {
+    composes: flexAlign;
+    cursor: pointer;
+}
+
+.img {
+    object-fit: cover;
+    min-height: 20pt;
+    min-width: 20pt;
+    height: 20pt;
+    width: 20pt;
+    /*margin-right: 10pt;*/
+    border-radius: 100%;
+}
+
+/*
+.name {
+    overflow: hidden;
+    color: fontColor;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-right: 5pt;
+}*/

@@ -1,0 +1,9 @@
+@value flexAlign from '@styles/style.css';
+
+.content {
+    composes: flexAlign;
+    width: 725pt;
+    flex-basis: 725pt;
+
+    /*background-color: silver;*/
+}

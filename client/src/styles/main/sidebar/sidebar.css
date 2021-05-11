@@ -1,0 +1,16 @@
+@value flexAlign from '@styles/style.css';
+
+.sidebar {
+    width: 175pt;
+    flex-basis: 175pt;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    /*background-color: #a7dbd8;*/
+}
+
+/*
+.sidebar div {
+    background-color: #a7dbd8;
+}*/

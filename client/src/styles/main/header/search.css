@@ -1,0 +1,29 @@
+@value flexAlign from '@styles/style.css';
+
+@value lightGray, fontColor from '@styles/colors.css';
+
+.search {
+    composes: flexAlign;
+    width: 300pt;
+    flex-basis: 300pt;
+    margin-right: auto;
+}
+
+.input {
+    width: 100%;
+    height: 25pt;
+    border-radius: 5pt;
+    padding-left: 27.5pt;
+    background-color: lightGray;
+    color: fontColor;
+    font-family: "Open Sans Semibold";
+    font-size: 9pt;
+    background-image: url("../../../resources/icons/search.svg");
+    background-repeat: no-repeat;
+    background-position: 7.5pt;
+    background-size: 12.5pt;
+}
+
+.input::placeholder {
+    color: fontColor;
+}

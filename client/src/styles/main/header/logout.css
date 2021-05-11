@@ -1,0 +1,18 @@
+@value flexAlign from '@styles/style.css';
+@value icon, filter from '@styles/common/icons.css';
+
+.logout {
+    composes: flexAlign;
+    width: 50pt;
+    flex-basis: 50pt;
+    margin-left: 10pt;
+}
+
+.container {
+    composes: flexAlign;
+    composes: filter;
+    height: 20pt;
+    width: 20pt;
+    cursor: pointer;
+    border-radius: 50%;
+}

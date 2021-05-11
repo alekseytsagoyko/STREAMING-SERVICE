@@ -1,0 +1,15 @@
+@value flexAlign from '@styles/style.css';
+@value icon, filter from '@styles/common/icons.css';
+
+.notification {
+    composes: flexAlign;
+    width: 35pt;
+    flex-basis: 35pt;
+}
+
+.container {
+    composes: flexAlign;
+    composes: filter;
+    padding: 5pt;
+    cursor: pointer;
+}

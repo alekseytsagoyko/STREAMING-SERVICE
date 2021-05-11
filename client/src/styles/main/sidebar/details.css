@@ -1,0 +1,32 @@
+@value avatar from '@styles/common/icons.css';
+@value fontColor from '@styles/colors.css';
+
+.details {
+    padding-left: 10pt;
+    display: flex;
+    align-items: center;
+    height: 50pt;
+    cursor: pointer;
+}
+
+.details img {
+    padding: 1.5pt;
+    border: 1.5pt solid palevioletred;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 5pt 0 10pt;
+    overflow: hidden;
+    font-size: 9pt;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.status {
+    color: fontColor;
+}

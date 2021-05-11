@@ -1,0 +1,14 @@
+@value gray from '@styles/colors.css';
+
+.header {
+    margin-top: 30pt;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: -webkit-flex;
+    display: flex;
+    align-items: stretch;
+    flex-flow: row nowrap;
+    height: 50pt;
+
+    /*background-color: silver;*/
+}

@@ -1,0 +1,54 @@
+@value flexAlign from '@styles/style.css';
+@value icon from '@styles/common/icons.css';
+@value fontColor, lightGray from '@styles/colors.css';
+
+.nav {
+    margin-top: 15pt;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 9pt;
+}
+
+.item {
+    padding-left: 10pt;
+    height: 30pt;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: fontColor;
+    border-radius: 5pt;
+}
+
+.item:hover {
+    background-color: lightGray;
+}
+
+.value {
+    margin: 0 10pt;
+    overflow: hidden;
+    font-family: "Open Sans Semibold";
+    flex-grow: 1;
+}
+
+.hr {
+    margin: 10pt;
+}
+
+.counter {
+    composes: flexAlign;
+    border-radius: 50%;
+    background-color: palevioletred;
+    width: 12.5pt;
+    height: 12.5pt;
+    color: white;
+    font-weight: bold;
+    font-size: 7pt;
+    margin-right: 10pt;
+}
+
+.signature {
+    color: fontColor;
+    margin-top: 15pt;
+    padding-left: 10pt;
+}

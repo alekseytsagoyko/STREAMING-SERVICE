@@ -1,0 +1,10 @@
+@value hAlign from '@styles/style.css';
+
+.main {
+    composes: hAlign;
+    width: 900pt;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    /*background-color: #888888;*/
+}

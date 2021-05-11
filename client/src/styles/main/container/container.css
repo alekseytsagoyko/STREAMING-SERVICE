@@ -1,0 +1,11 @@
+.container {
+    margin-top: 15pt;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+
+    /*background-color: silver;*/
+}
