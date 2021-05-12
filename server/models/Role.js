@@ -5,7 +5,7 @@ const roleScheme = new Schema(
         value: {
             type: String,
             unique: true,
-            efault: 'USER'
+            default: 'USER'
         }
     },
     {

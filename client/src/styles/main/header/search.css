@@ -4,8 +4,8 @@
 
 .search {
     composes: flexAlign;
-    width: 300pt;
-    flex-basis: 300pt;
+    width: 350pt;
+    flex-basis: 350pt;
     margin-right: auto;
 }
 

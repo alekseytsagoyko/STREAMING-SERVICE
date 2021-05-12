@@ -1,7 +1,7 @@
 const config = {
     proxy: 'http://localhost:3000',
     storageName: 'user',
-    loginPath: '/',
+    loginPath: '/tracks',
     logoutPath: '/login'
 };
 

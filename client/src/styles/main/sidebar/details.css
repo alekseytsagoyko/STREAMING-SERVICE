@@ -9,9 +9,9 @@
     cursor: pointer;
 }
 
-.details img {
+.details img {/*
     padding: 1.5pt;
-    border: 1.5pt solid palevioletred;
+    border: 1.5pt solid palevioletred;*/
 }
 
 .container {

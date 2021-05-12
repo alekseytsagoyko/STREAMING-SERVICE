@@ -1,0 +1,61 @@
+@value icon, icon10, icon27, filter from '@styles/common/icons.css';
+@value lightGray, fontColor, gray, lightBlue, blue from '@styles/colors.css';
+@value ml15 from '@styles/style.css';
+
+.player {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5pt 5pt 0 0;
+    background-color: lightGray;
+    font-size: 9pt;
+}
+
+.bar {
+    padding-left: 10pt;
+    width: 165pt;
+    display: flex;
+    align-items: center;
+}
+
+.switch {
+    composes: icon10;
+    composes: filter;
+    margin-left: 7.5pt;
+    cursor: pointer;
+}
+
+.cover {
+    composes: icon27;
+    margin-left: 15pt;
+    border-radius: 5pt;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    max-width: 100pt;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.creator {
+    font-family: "Open Sans Semibold";
+    color: fontColor;
+}
+
+.playerIcon {
+    composes: icon;
+    composes: filter;
+    margin-left: 7.5pt;
+    cursor: pointer;
+}
+

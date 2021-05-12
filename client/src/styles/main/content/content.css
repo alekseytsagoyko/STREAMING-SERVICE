@@ -2,8 +2,10 @@
 
 .content {
     composes: flexAlign;
-    width: 725pt;
-    flex-basis: 725pt;
+    width: 525pt;
+    flex-basis: 525pt;
+    /*width: 350pt;
+    flex-basis: 350pt;*/
 
     /*background-color: silver;*/
 }

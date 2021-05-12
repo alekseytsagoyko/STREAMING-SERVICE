@@ -11,12 +11,14 @@ const navItems = [
     {
         id: 1,
         icon: feedIcon,
-        value: 'Главная'
+        value: 'Главная',
+        url: '/feed'
     },
     {
         id: 2,
         icon: playlistIcon,
-        value: 'Мои аудиозаписи'
+        value: 'Мои аудиозаписи',
+        url: '/tracks'
     },
     {
         id: 3,
@@ -38,7 +40,7 @@ function Nav() {
                 <div className={styles.counter}>1</div>
             </NavItem>
             <div className={styles.signature}>
-                Itaque earum rerum hic tenetur a sapiente delectus, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.
+                Itaque earum rerum hic tenetur a sapiente delectus, quia voluptas sit.
             </div>
         </div>
     );

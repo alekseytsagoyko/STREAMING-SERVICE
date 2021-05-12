@@ -4,6 +4,18 @@
     width: 15pt;
 }
 
+.icon10 {
+    object-fit: cover;
+    height: 10pt;
+    width: 10pt;
+}
+
+.icon27 {
+    object-fit: cover;
+    height: 27pt;
+    width: 27pt;
+}
+
 .avatar {
     object-fit: cover;
     border-radius: 50%;

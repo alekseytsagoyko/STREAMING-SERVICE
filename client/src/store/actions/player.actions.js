@@ -1,0 +1,5 @@
+const SET_ID = 'SET_ID';
+const SET_LIST = 'SET_LIST';
+const SET_PLAYBACK = 'SET_PLAYBACK';
+
+export { SET_ID, SET_LIST, SET_PLAYBACK };

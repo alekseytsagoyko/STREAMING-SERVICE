@@ -15,7 +15,8 @@ module.exports = {
             '@styles': path.resolve(__dirname, 'src/styles'),
             '@hooks': path.resolve(__dirname, 'src/hooks'),
             '@resources': path.resolve(__dirname, 'src/resources'),
-            '@contexts': path.resolve(__dirname, 'src/contexts')
+            '@contexts': path.resolve(__dirname, 'src/contexts'),
+            '@store': path.resolve(__dirname, 'src/store')
         }
     },
     devServer: {

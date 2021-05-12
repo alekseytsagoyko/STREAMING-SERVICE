@@ -7,6 +7,7 @@ const storageConfig = require('./configs/multer');
 const authHandler = require('./handlers/authHandler');
 const userRouter = require('./routes/usersRouter');
 const fileRouter = require('./routes/fileRouter');
+const trackRouter = require('./routes/tracksRouter');
 const mongoHelper = require('./helpers/mongoHelper');
 const { port } = require('./configs/config');
 
@@ -21,7 +22,8 @@ app.use(multer({ storage: storageConfig }).single("file"));
 app.use(jsonParser);
 app.use(urlencodedParser);
 
-app.use("/users", roleMiddleware(["USER"]), userRouter);
+app.use("/users", roleMiddleware(['USER']), userRouter);
+app.use('/tracks', trackRouter);
 app.post("/login", authHandler.login);
 app.post('/register', authHandler.registration);
 app.post('/file', fileRouter);

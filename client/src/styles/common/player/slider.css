@@ -1,0 +1,31 @@
+@value fontColor, blue from '@styles/colors.css';
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 350pt;
+}
+
+.slider {
+    appearance: none;
+    width: 275pt;
+    height: 1pt;
+    border-radius: 5pt;
+    outline: none;
+    background-color: fontColor;
+    margin: 0 10pt;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    height: 5pt;
+    width: 5pt;
+    border-radius: 50%;
+    transition: .2s ease-in-out;
+}
+
+.slider:hover::-webkit-slider-thumb {
+    background-color: blue;
+}

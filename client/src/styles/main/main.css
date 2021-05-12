@@ -2,9 +2,9 @@
 
 .main {
     composes: hAlign;
-    width: 900pt;
+    width: 700pt;
     height: 100%;
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto 1fr 50pt;
     /*background-color: #888888;*/
 }
