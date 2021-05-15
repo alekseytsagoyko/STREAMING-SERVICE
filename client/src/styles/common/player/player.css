@@ -1,10 +1,11 @@
 @value icon, icon10, icon27, filter from '@styles/common/icons.css';
-@value lightGray, fontColor, gray, lightBlue, blue from '@styles/colors.css';
+@value lightGray, fontColor, gray, lightBlue, blue, blueFilter from '@styles/colors.css';
 @value ml15 from '@styles/style.css';
 
 .player {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
+    position: fixed;
+    height: 50pt;
+    bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,11 +14,24 @@
     font-size: 9pt;
 }
 
-.bar {
-    padding-left: 10pt;
+.leftBar {
+    width: 165pt;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.rightBar {
     width: 165pt;
     display: flex;
     align-items: center;
+    margin-left: 15pt;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-right: 15pt;
 }
 
 .switch {
@@ -31,16 +45,6 @@
     composes: icon27;
     margin-left: 15pt;
     border-radius: 5pt;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding-left: 10pt;
-    padding-right: 10pt;
-    max-width: 100pt;
 }
 
 .title {
@@ -57,5 +61,9 @@
     composes: filter;
     margin-left: 7.5pt;
     cursor: pointer;
+}
+
+.active {
+    filter: blueFilter;
 }
 

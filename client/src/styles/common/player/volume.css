@@ -1,0 +1,61 @@
+@value icon, icon10, icon27, filter from '@styles/common/icons.css';
+@value hAlign, align from '@styles/style.css';
+@value gray, lightGray, blue, blueFilter, fontColor from '@styles/colors.css';
+
+.volume {
+    margin-left: 7.5pt;
+    position: relative;
+    height: 30pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    composes: hAlign;
+    position: absolute;
+    width: 7.5pt;
+    height: 50pt;
+    bottom: 25pt;
+    display: none;
+    border-radius: 5pt;
+    cursor: pointer;
+}
+
+.volume:hover .container {
+    display: block;
+    background-color: gray;
+}
+
+.playerIcon {
+    composes: icon;
+    cursor: pointer;
+}
+
+.volume:hover .playerIcon {
+    filter: blueFilter;
+}
+
+.slider {
+    composes: align;
+    position: absolute;
+    appearance: none;
+    height: 1.5pt;
+    width: 45pt;
+    cursor: pointer;
+    background-color: fontColor;
+    border-radius: 5pt;
+    transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    height: 4pt;
+    width: 4pt;
+    border-radius: 50%;
+    background-color: #6987ea;
+}
+
+.volume:hover .slider {
+    display: block;
+}

@@ -1,12 +1,13 @@
+const ObjectId = require('mongoose').Types.ObjectId;
 const bcrypt = require('bcrypt');
 const User = require('../models/User');
 const Role = require('../models/Role');
+const Collection = require('../models/Collection');
 const { generateAccessToken } = require('../helpers/jwtHelper');
 
 exports.login = async function (req, res) {
 
     const { email, password } = req.body;
-    console.log('body', req.body);
     const user = await User.findOne({ email });
 
     if (!user) {
@@ -37,6 +38,9 @@ exports.registration = async function (req, res) {
     const userRole = await Role.findOne({ value: "USER" });
     const user = new User({ email, password: hashPassword, roles: [userRole.value] });
     await user.save();
+
+    const collection = new Collection({ user: ObjectId(user._id) });
+    await collection.save();
 
     return res.json({ message: "User successfully registered." });
 

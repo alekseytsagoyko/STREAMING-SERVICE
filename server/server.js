@@ -8,6 +8,8 @@ const authHandler = require('./handlers/authHandler');
 const userRouter = require('./routes/usersRouter');
 const fileRouter = require('./routes/fileRouter');
 const trackRouter = require('./routes/tracksRouter');
+const testRouter = require('./routes/testRouter');
+const collectionRouter = require('./routes/collectionsRouter');
 const mongoHelper = require('./helpers/mongoHelper');
 const { port } = require('./configs/config');
 
@@ -18,15 +20,17 @@ mongoHelper.connect();
 
 app.use(cors());
 app.use(express.static(__dirname));
-app.use(multer({ storage: storageConfig }).single("file"));
 app.use(jsonParser);
 app.use(urlencodedParser);
+app.use(multer({ storage: storageConfig }).single('file'));
 
 app.use("/users", roleMiddleware(['USER']), userRouter);
 app.use('/tracks', trackRouter);
+app.use('/collections', collectionRouter);
 app.post("/login", authHandler.login);
 app.post('/register', authHandler.registration);
-app.post('/file', fileRouter);
+app.use('/file', fileRouter);
+app.use('/test', testRouter);
 
 app.use(function (req, res, next) {
     res.status(404).send("Content not found");

@@ -3,13 +3,20 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    padding: 0 5pt;
 }
 
-.list {
+.container {
     width: 350pt;
     flex-basis: 350pt;
     display: flex;
     flex-direction: column;
+    align-items: stretch;
+}
+
+.list {
+    display: flex;
+    flex-direction: column-reverse;
     align-items: stretch;
 }
 

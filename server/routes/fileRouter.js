@@ -3,6 +3,6 @@ const { uploadFile } = require('../handlers/fileHandler');
 
 const fileRouter = express.Router();
 
-fileRouter.use('/upload', uploadFile);
+fileRouter.post('/upload', uploadFile);
 
 module.exports = fileRouter;

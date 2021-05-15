@@ -5,6 +5,6 @@
     width: 700pt;
     height: 100%;
     display: grid;
-    grid-template-rows: auto 1fr 50pt;
+    grid-template-rows: auto 1fr;
     /*background-color: #888888;*/
 }

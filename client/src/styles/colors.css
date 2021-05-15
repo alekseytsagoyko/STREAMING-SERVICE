@@ -5,3 +5,4 @@
 @value fontColor: #677680;
 @value white: #fff;
 @value purple: #9147ff;
+@value blueFilter: invert(30%) sepia(52%) saturate(3843%) hue-rotate(205deg) brightness(99%) contrast(85%);

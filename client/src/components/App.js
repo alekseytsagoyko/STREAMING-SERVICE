@@ -12,7 +12,7 @@ import '@styles/style.css';
 
 const routes = {
     "/login": () => <Login/>,
-    "/registration": () => <Register/>,
+    "/register": () => <Register/>,
     "/*": () => <Main/>
 };
 
@@ -24,9 +24,10 @@ function App() {
     return (
         <AuthContext.Provider value={{ ...authParams }}>
             <PlayerContext.Provider value={{ ...playerParams }}>
-                    <div className={styles.app}>
-                        {routeResult}
-                    </div>
+                <div className={styles.app}>
+                    {routeResult}
+                    {/*<MainModified />*/}
+                </div>
             </PlayerContext.Provider>
         </AuthContext.Provider>
     );

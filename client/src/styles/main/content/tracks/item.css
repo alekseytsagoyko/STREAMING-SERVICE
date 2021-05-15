@@ -1,0 +1,37 @@
+@value icon27, icon10, filter from '@styles/common/icons.css';
+@value lightGray, blueFilter, fontColor from '@styles/colors.css';
+
+.item {
+    padding: 5pt 0;
+    margin: 0 -5pt;
+    border-radius: 5pt;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 9pt;
+}
+
+.item:hover {
+    background-color: lightGray;
+}
+
+.itemIcon {
+    display: none;
+    composes: icon10;
+    composes: filter;
+    margin-right: 10pt;
+    cursor: pointer;
+}
+
+.item:hover .itemIcon {
+    display: block;
+}
+
+.duration {
+    color: fontColor;
+    margin-right: 10pt;
+}
+
+.item:hover .duration {
+    display: none;
+}

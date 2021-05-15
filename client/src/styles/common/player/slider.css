@@ -1,6 +1,6 @@
-@value fontColor, blue from '@styles/colors.css';
+@value fontColor, blue, darkBlue from '@styles/colors.css';
 
-.container {
+.slider {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -8,24 +8,39 @@
     width: 350pt;
 }
 
-.slider {
+.container {
+    width: 275pt;
+    position: relative;
+    margin: 0 10pt;
+}
+
+.input {
+    position: absolute;
     appearance: none;
     width: 275pt;
     height: 1pt;
     border-radius: 5pt;
     outline: none;
     background-color: fontColor;
-    margin: 0 10pt;
+    cursor: pointer;
 }
 
-.slider::-webkit-slider-thumb {
+.input::-webkit-slider-thumb {
     appearance: none;
-    height: 5pt;
-    width: 5pt;
+    height: 6pt;
+    width: 6pt;
     border-radius: 50%;
-    transition: .2s ease-in-out;
 }
 
-.slider:hover::-webkit-slider-thumb {
+.input:hover::-webkit-slider-thumb {
+    transition: .2s ease-in-out;
     background-color: blue;
+}
+
+.progress {
+    z-index: 1;
+    position: absolute;
+    height: 1pt;
+    width: 210pt;
+    background-color: darkBlue;
 }

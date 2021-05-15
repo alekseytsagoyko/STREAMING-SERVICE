@@ -5,7 +5,7 @@ function Logo() {
     return (
         <div className={styles.logo}>
             <div className={styles.span}>
-                Logo
+                Soundy{/*<div className={styles.colored}>y</div>*/}
             </div>
         </div>
     );

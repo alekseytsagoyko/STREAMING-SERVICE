@@ -1,0 +1,39 @@
+@value fontColor, lightGray from '@styles/colors.css';
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 15pt;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 13pt;
+}
+
+.container {
+    margin-top: 10pt;
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    color: fontColor;
+    font-size: 9pt;
+    font-family: "Open Sans Semibold";
+}
+
+.counter {
+    padding: 2.5pt 4pt;
+    margin-left: 5pt;
+    background-color: lightGray;
+    border-radius: 5pt;
+    color: fontColor;
+    font-weight: bold;
+    font-size: 9pt;
+}
+
+.sort {
+    margin-left: auto;
+}

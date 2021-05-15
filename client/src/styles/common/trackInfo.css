@@ -1,0 +1,46 @@
+@value icon, icon27, filter from '@styles/common/icons.css';
+@value fontColor, blue, lightBlue, blueFilter, gray from '@styles/colors.css';
+
+.cover {
+    composes: icon27;
+    margin-left: 5pt;
+    border-radius: 5pt;
+    background-color: gray;
+    outline: none;
+    border: 1px solid gray;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    margin-right: auto;
+    max-width: 100pt;
+    font-size: 9pt;
+    overflow: hidden;
+}
+
+.title {
+    font-family: "Open Sans Semibold";
+    cursor: pointer;
+    max-width: 100pt;
+    margin-right: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.creator {
+    font-family: "Open Sans Semibold";
+    color: fontColor;
+    max-width: 100pt;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.creator:hover {
+    color: black;
+    cursor: pointer;
+}

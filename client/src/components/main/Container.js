@@ -8,6 +8,7 @@ function Container() {
       <div className={styles.container}>
           <Sidebar />
           <Content />
+          <div></div>
       </div>
     );
 }
