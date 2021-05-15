@@ -6,13 +6,13 @@ import styles from '@styles/main/content/tracks/tracks.css';
 
 function TrackList() {
 
-    const list = useSelector(state => state.collection);
+    const { tracks } = useSelector(state => state.collection);
 
     return (
         <div className={styles.container}>
-            <TracksHeader count={list.length}/>
+            <TracksHeader count={tracks.length}/>
             <div className={styles.list}>
-                {list.map((track) => {
+                {tracks.map((track) => {
                     return <TrackItem key={track._id} track={track}/>;
                 })}
             </div>
