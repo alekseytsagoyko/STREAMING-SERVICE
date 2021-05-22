@@ -27,7 +27,8 @@
 .value {
     margin: 0 10pt;
     overflow: hidden;
-    font-family: "Open Sans Semibold";
+    /*font-family: "Open Sans Semibold";*/
+    /*font-weight: bold;*/
     flex-grow: 1;
 }
 

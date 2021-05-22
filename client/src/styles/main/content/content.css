@@ -1,7 +1,7 @@
 @value flexAlign from '@styles/style.css';
 
 .content {
-    composes: flexAlign;
+    position: relative;
     width: 525pt;
     flex-basis: 525pt;
     /*width: 350pt;

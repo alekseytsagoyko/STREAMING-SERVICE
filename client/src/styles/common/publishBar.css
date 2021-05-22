@@ -1,0 +1,31 @@
+@value blue, darkBlue, fontColor, lightGray from '@styles/colors.css';
+
+.publish {
+    margin-top: 30pt;
+    width: 130pt;
+    padding: 10pt 15pt;
+    margin-left: 15pt;
+    font-size: 9pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid lightGray;
+    border-radius: 5pt;
+    height: 100pt;
+}
+
+.title {
+    color: fontColor;
+}
+
+.button {
+    padding: 5pt 0pt;
+    margin-top: 10pt;
+    border-radius: 5pt;
+    color: white;
+    background-color: blue;
+}
+
+.button:hover {
+    background-color: darkBlue;
+}

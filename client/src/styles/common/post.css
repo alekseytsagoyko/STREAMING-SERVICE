@@ -1,0 +1,74 @@
+@value icon27 from '@styles/common/icons.css';
+@value fontColor, lightGray, blue, purple from '@styles/colors.css';
+
+.post {
+    padding: 10pt;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid lightGray;
+    border-radius: 5pt;
+    margin-bottom: 5pt;
+}
+
+.post:hover {
+    box-shadow: 0 0 1.5pt 0 lightGray;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    composes: icon27;
+    border-radius: 50%;
+}
+
+.creator, .date {
+    margin-left: 10pt;
+    color: black;
+    font-size: 10pt;
+    cursor: pointer;
+}
+
+.date {
+    color: fontColor;
+}
+
+.creator:hover {
+    color: fontColor;
+}
+
+.text {
+    margin-top: 10pt;
+    font-size: 9pt;
+    color: fontColor;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+.img {
+    margin-top: 15pt;
+    object-fit: cover;
+    height: 210pt;
+    width: 330pt;
+    border-radius: 5pt;
+    background-color: black;
+}
+
+.track {
+    margin-top: 5pt;
+    padding: 5pt 0 5pt 5pt;
+    width: calc(100% - 5pt);
+    border-radius: 5pt;
+    display: flex;
+    align-items: center;
+    border: 1px solid lightGray;
+    cursor: pointer;
+}
+
+.track:hover {
+    background-color: lightGray;
+}

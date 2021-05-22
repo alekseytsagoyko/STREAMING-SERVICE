@@ -1,0 +1,28 @@
+@value lightGray from '@styles/colors.css';
+
+.tracks {
+    display: flex;
+    align-items: flex-start;
+}
+
+.list {
+    padding: 5pt 0pt;
+    width: 350pt;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightGray;
+    border-radius: 5pt;
+}
+
+.track {
+    padding: 5pt 0 5pt 5pt;
+    width: calc(100% - 5pt);
+    border-radius: 5pt;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.track:hover {
+    background-color: lightGray;
+}

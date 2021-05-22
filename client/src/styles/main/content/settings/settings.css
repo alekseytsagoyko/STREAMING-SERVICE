@@ -1,0 +1,76 @@
+@value icon27 from '@styles/common/icons.css';
+@value blue, darkBlue, fontColor, lightGray from '@styles/colors.css';
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    margin-left: 5pt;
+}
+
+.title {
+    font-size: 13pt;
+}
+
+.info {
+    margin: 5pt 0;
+    width: 330pt;
+    padding: 10pt 10pt;
+    display: flex;
+    align-items: center;
+    border-radius: 5pt;
+    border: 1px solid lightGray;
+}
+
+.button {
+    padding: 5pt;
+    width: 150pt;
+    margin-top: 15pt;
+    border-radius: 5pt;
+    font-size: 9pt;
+    color: white;
+    background-color: blue;
+}
+
+.button:hover {
+    background-color: darkBlue;
+}
+
+.img {
+    object-fit: cover;
+    height: 100pt;
+    width: 100pt;
+    border-radius: 50%;
+}
+
+.img:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5pt 0 lightGray;
+    transition-duration: .2s;
+}
+
+.input {
+    padding: 5pt;
+    margin-bottom: 5pt;
+    border-radius: 5pt;
+    border: 1px solid lightGray;
+}
+
+.text {
+    font-size: 9pt;
+    max-width: 180pt;
+    color: fontColor;
+    margin-left: 15pt;
+}
+
+.description {
+    font-size: 9pt;
+    color: fontColor;
+}
+
+.container {
+    /*margin-right: 15pt;*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

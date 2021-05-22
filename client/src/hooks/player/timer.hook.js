@@ -3,8 +3,6 @@ import { useDispatch } from "react-redux";
 import { incrementCurrentTime } from "@store/creators/player.creators";
 import store from "@store/store";
 
-//@STORE
-
 function useTimer(audio) {
     const dispatch = useDispatch();
 

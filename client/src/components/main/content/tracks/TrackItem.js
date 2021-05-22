@@ -11,8 +11,6 @@ import styles from "@styles/main/content/tracks/item.css";
 import removeIcon from "@resources/icons/remove.svg";
 import { useDispatch } from "react-redux";
 
-const src = 'https://sun9-2.userapi.com/impg/MyM4ZQ-lo0U7MjtWxSjsjuNQ4GWaaEBTkBqmiA/4SshhvMKh6w.jpg?size=1080x1350&quality=96&sign=ce57fd624e2d7fd6ebb8febd9733db22&type=album';
-
 function TrackItem({ track }) {
 
     const { play, add } = useContext(PlayerContext);

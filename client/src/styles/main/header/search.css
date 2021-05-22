@@ -17,8 +17,9 @@
     padding-left: 27.5pt;
     background-color: lightGray;
     color: fontColor;
-    font-family: "Open Sans Semibold";
+    /*font-family: "Open Sans Semibold";*/
     font-size: 9pt;
+    /*font-weight: bold;*/
     background-image: url("../../../resources/icons/search.svg");
     background-repeat: no-repeat;
     background-position: 7.5pt;

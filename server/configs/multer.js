@@ -2,7 +2,7 @@ const multer = require('multer');
 
 const storageConfig = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, "data/tmp");
+        cb(null, 'data/tmp');
     },
     filename: (req, file, cb) => {
         const randomValue = Math.random().toString().slice(2);

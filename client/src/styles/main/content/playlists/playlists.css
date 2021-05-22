@@ -1,0 +1,88 @@
+@value fontColor, lightGray, blue, darkBlue from '@styles/colors.css';
+
+.playlists {
+    padding: 0 5pt;
+    display: flex;
+    flex-direction: column;
+    font-size: 9pt;
+    color: fontColor;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 13pt;
+    color: black
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+}
+
+.count {
+    display: flex;
+    align-items: center;
+    margin-top: 5pt;
+}
+
+.counter {
+    padding: 2.5pt;
+    background-color: lightGray;
+    border-radius: 5pt;
+    margin-left: 5pt;
+}
+
+.container {
+    margin-top: 15pt;
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+}
+
+.playlist {
+    margin-right: 15pt;
+    padding: 10pt;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid lightGray;
+    cursor: pointer;
+    margin-bottom: 5pt;
+}
+
+.playlist:hover {
+    box-shadow: 0 0 3pt 0 gray;
+}
+
+.img {
+    width: 110pt;
+    height: 110pt;
+    border-radius: 5pt;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 9pt;
+    margin-top: 5pt;
+    color: black;
+}
+
+.creator {
+    color: fontColor;
+}
+
+.button {
+    margin-left: auto;
+    background-color: blue;
+    border-radius: 5pt;
+    padding: 5pt;
+    color:white;
+}
+
+.button:hover {
+    background-color: darkBlue;
+}

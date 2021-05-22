@@ -3,6 +3,7 @@ const bcrypt = require('bcrypt');
 const User = require('../models/User');
 const Role = require('../models/Role');
 const Collection = require('../models/Collection');
+const Subscription = require('../models/Subscription');
 const { generateAccessToken } = require('../helpers/jwtHelper');
 
 exports.login = async function (req, res) {
@@ -42,12 +43,9 @@ exports.registration = async function (req, res) {
     const collection = new Collection({ user: ObjectId(user._id) });
     await collection.save();
 
+    const subscription = new Subscription({ user: user._id, subscriptions: [] });
+    await subscription.save();
+
     return res.json({ message: "User successfully registered." });
 
 };
-
-/*
-exports.verify = async (req, res) => {
-
-};
-*/

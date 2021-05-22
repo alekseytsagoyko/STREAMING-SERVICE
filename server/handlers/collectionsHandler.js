@@ -1,14 +1,32 @@
+const fs = require('fs');
 const ObjectId = require('mongoose').Types.ObjectId;
 const Track = require('../models/Track');
 const Collection = require('../models/Collection');
 
-exports.getCollection = async (req, res) => {
-    const collection = await Collection
-        .findOne({ user: req.params.id })
-        .populate('tracks');
+const header = 'data:image/jpeg;base64,';
 
-    if (collection) return res.status(200).json(collection.tracks);
-    return res.status(400).json({ message: 'Collection does not exist' });
+exports.getCollection = async (req, res) => {
+    try {
+        let collection = (
+            await Collection
+            .findOne({ user: req.params.id })
+            .populate('tracks')
+        ).toObject();
+
+        collection.tracks.forEach((track) => {
+            const coverPath = `data/covers/${track?._id}.jpg`;
+            if(fs.existsSync(coverPath)) {
+                const image = fs.readFileSync(coverPath);
+                const base64Image = new Buffer(image).toString('base64');
+                track.image = header + base64Image;
+            }
+        });
+
+        if (collection) return res.status(200).json(collection.tracks);
+        return res.status(400).json({ message: 'Collection does not exist' });
+    } catch (e) {
+        return res.status(400).json({ message: e.message });
+    }
 };
 
 exports.updateCollection = async (req, res) => {

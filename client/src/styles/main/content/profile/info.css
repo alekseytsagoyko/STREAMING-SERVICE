@@ -1,0 +1,76 @@
+@value lightGray, gray, fontColor, blue, darkBlue from '@styles/colors.css';
+
+.info {
+    display: flex;
+    align-items: flex-start;
+}
+
+.img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 65pt;
+    width: 65pt;
+}
+
+.container {
+    margin-top: 5pt;
+    margin-left: 15pt;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    font-size: 14pt;
+}
+
+.follow {
+    padding: 5pt;
+    border-radius: 5pt;
+    margin-left: 15pt;
+    background-color: blue;
+    color: white;
+}
+
+.follow:hover {
+    background-color: darkBlue;
+}
+
+.unfollow {
+    padding: 5pt;
+    border-radius: 5pt;
+    margin-left: 15pt;
+    background-color: palevioletred;
+    color: white;
+}
+
+.unfollow:hover {
+    background-color: #974c65;
+}
+
+.status {
+    margin-top: 5pt;
+    color: fontColor;
+    font-size: 9pt;
+    display: inline-block;
+    width: 200pt;
+    height: 30pt;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15pt;
+}
+
+.value {
+
+}
+
+.type {
+    font-size: 9pt;
+    color: fontColor
+}

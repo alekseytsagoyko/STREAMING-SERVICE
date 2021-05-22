@@ -1,0 +1,177 @@
+@value fontColor, lightGray, blue, darkBlue from '@styles/colors.css';
+
+.playlist {
+    padding: 0 5pt;
+    display: flex;
+    flex-direction: column;
+    font-size: 9pt;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    object-fit: cover;
+    width: 100pt;
+    height: 100pt;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container {
+    margin-left: 15pt;
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 13pt;
+    color: black;
+    cursor: pointer;
+}
+
+.creator {
+    color: fontColor;
+    font-size: 13pt;
+}
+
+.count {
+    margin-top: 5pt;
+    color: fontColor;
+    display: flex;
+    align-items: center;
+}
+
+.counter {
+    border-radius: 5pt;
+    margin-left: 5pt;
+    padding: 2.5pt;
+    background-color: lightGray;
+}
+
+.list {
+    padding: 15pt 0;
+    margin-top: 15pt;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid lightGray;
+    border-top: 1px solid lightGray;
+    /*background-color: black;*/
+}
+
+.item {
+    padding: 5pt;
+    align-items: center;
+    display: flex;
+}
+
+.item:hover {
+    background-color: lightGray;
+    cursor: pointer;
+    border-radius: 5pt;
+}
+
+.button {
+    padding: 5pt;
+    border-radius: 5pt;
+    color: white;
+    background-color: blue;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+.button:hover {
+    background-color: darkBlue;
+}
+
+.active {
+    background-color: palevioletred;
+}
+
+.active:hover {
+    background-color: #8e4960;
+}
+
+.add {
+    padding: 15pt 0;
+    margin-top: 15pt;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid lightGray;
+    border-top: 1px solid lightGray;
+}
+
+.track {
+    border-radius: 5pt;
+    padding: 5pt;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.track:hover {
+    background-color: lightGray;
+}
+
+.cover {
+    object-fit: cover;
+    width: 30pt;
+    height: 30pt;
+    border-radius: 5pt;
+}
+
+.addButton {
+    padding: 5pt;
+    border-radius: 5pt;
+    color: white;
+    background-color: blue;
+    margin-left: auto;
+}
+
+.addButton:hover {
+    background-color: darkBlue;
+}
+
+.duration {
+    color: fontColor;
+    margin-left: auto;
+    margin-right: 5pt;
+}
+
+.edit {
+    display: flex;
+}
+
+.editableButton {
+    margin-left: 5pt;
+    font-size: 9pt;
+    padding: 2pt 4pt;
+    background-color: blue;
+    border-radius: 5pt;
+    color: white;
+}
+
+.editableButton:hover {
+    background-color: darkBlue;
+}
+
+.input {
+    border: 1px solid lightGray;
+    border-radius: 5pt;
+    padding: 5pt;
+}
+
+.deleteButton {
+    padding: 5pt;
+    border-radius: 5pt;
+    color: white;
+    background-color: palevioletred;
+    margin-left: 5pt;
+    margin-top: auto;
+}
+
+.deleteButton:hover {
+    background-color: #8e4960;
+}

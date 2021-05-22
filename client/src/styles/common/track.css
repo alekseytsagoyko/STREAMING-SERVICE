@@ -1,0 +1,30 @@
+@value fontColor from '@styles/colors.css';
+
+.info {
+    display: flex;
+    flex-direction: column;
+    font-size: 9pt;
+    margin-left: 5pt;
+    margin-right: auto;
+}
+
+.duration {
+    color: fontColor;
+    font-size: 9pt;
+    margin-right: 10pt;
+}
+
+.title {
+    cursor: pointer;
+    max-width: 100pt;
+    margin-right: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.creator {
+    color: fontColor;
+    max-width: 100pt;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

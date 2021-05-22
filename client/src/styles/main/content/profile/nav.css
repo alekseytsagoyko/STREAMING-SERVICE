@@ -1,0 +1,25 @@
+@value lightGray, gray, fontColor from '@styles/colors.css';
+@value icon10, filter from '@styles/common/icons.css';
+
+.nav {
+    margin: 15pt 0 0 75pt;
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-right: 5pt;
+    padding: 2.5pt 5pt;
+}
+
+.item:hover {
+    background-color: lightGray;
+    border-radius: 5pt;
+    cursor: pointer;
+}
+
+.type {
+    /*margin-left: 5pt;*/
+}

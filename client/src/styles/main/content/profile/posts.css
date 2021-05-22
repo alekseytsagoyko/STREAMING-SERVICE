@@ -1,0 +1,11 @@
+.posts {
+    display: flex;
+    align-items: flex-start;
+}
+
+.list {
+    max-width: 350pt;
+    width: 350pt;
+    display: flex;
+    flex-direction: column-reverse;
+}

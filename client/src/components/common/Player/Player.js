@@ -1,4 +1,4 @@
-import React, { useCallback, useContext } from 'react';
+import React, { useCallback, useContext, useEffect, useRef } from 'react';
 import { useSelector } from "react-redux";
 import PlayerContext from "@contexts/PlayerContext";
 import Slider from "@components/common/Player/Slider";
@@ -22,6 +22,7 @@ function Player() {
     const { id } = useContext(AuthContext);
     const { play, pause, next, prev, repeat, add } = useContext(PlayerContext);
     const { isPlayed, isRepeat, isAdded, track } = useSelector(state => state.player);
+    const playerRef = useRef();
 
     const toggleHandler = useCallback(async () => {
         if (!isPlayed) {
@@ -31,7 +32,7 @@ function Player() {
     }, [isPlayed]);
 
     return (
-        <div className={styles.player}>
+        <div className={styles.player} ref={playerRef}>
             <div className={styles.leftBar}>
                 <div className={styles.container}>
                     <img

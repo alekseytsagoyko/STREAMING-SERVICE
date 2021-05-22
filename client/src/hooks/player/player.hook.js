@@ -23,12 +23,15 @@ function usePlayer() {
     const timer = useTimer(audio.current);
     const dispatch = useDispatch();
 
-    const play = async (_id, _list = null) => {
+    const play = async (_id = null, _list = null) => {
+        console.log(_id);
         const { id, list } = store.getState().player;
 
         if (_id != id && _id != null) {
+            console.log('произошло проникновение');
             const data = await request(`/tracks/${_id}`);
-            const isAdded = !!store.getState().collection.find((track) => (track._id == data.track?._id));
+            console.log(data);
+            const isAdded = !!store.getState().collection.tracks.find((track) => (track._id == data.track?._id));
             dispatch(setId(_id));
             dispatch(setTrack(data.track, isAdded));
             dispatch(setCurrentTime(0));
@@ -42,6 +45,7 @@ function usePlayer() {
         await audio.current.play();
         dispatch(setPlayback(true));
         dispatch(setDuration(audio.current.duration));
+        if(_id == null) return timer(id);
         return timer(_id);
     };
 

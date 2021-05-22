@@ -1,0 +1,78 @@
+@value lightGray, fontColor, blue, darkBlue from '@styles/colors.css';
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 340pt;
+    margin-top: 15pt;
+    border-radius: 5pt;
+    border: 1px solid lightGray;
+    padding: 5pt;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+.title {
+    font-size: 13pt;
+}
+
+.sub {
+    width: 300pt;
+    font-size: 9pt;
+    color: fontColor;
+}
+
+.text {
+    margin-top: 5pt;
+    outline: none;
+    padding: 5pt;
+    border: 1px solid lightGray;
+    border-radius: 5pt;
+}
+
+.filename {
+    font-size: 9pt;
+    color: black;
+    margin-left: 5pt;
+}
+
+.button {
+    margin-top: 5pt;
+    border-radius: 5pt;
+    padding: 5pt;
+    color: white;
+    background-color: blue;
+}
+
+.button:hover {
+    background-color: darkBlue;
+}
+
+.confirm {
+    margin-left: 5pt;
+    width: 70pt;
+    margin-top: 30pt;
+    border-radius: 5pt;
+    padding: 5pt;
+    color: white;
+    background-color: #92c752;
+}
+
+.confirm:hover {
+    background-color: #6c993d;
+}
+
+.input {
+    margin-top: 5pt;
+    padding: 5pt;
+    border-radius: 5pt;
+    border: 1px solid lightGray;
+}
+
+.checkbox {
+    margin-top: 5pt;
+}

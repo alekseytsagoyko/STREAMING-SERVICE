@@ -1,0 +1,24 @@
+@value fontColor from '@styles/colors.css';
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 9pt;
+}
+
+.title {
+    font-size: 13pt;
+}
+
+.description {
+    margin-top: 5pt;
+    width: 250pt;
+    color: fontColor;
+}
+
+.warning {
+    width: 350pt;
+    color: palevioletred;
+}

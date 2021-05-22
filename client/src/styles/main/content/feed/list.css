@@ -1,0 +1,12 @@
+.container {
+    width: 350pt;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.list {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+}

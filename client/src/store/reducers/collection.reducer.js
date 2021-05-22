@@ -19,11 +19,11 @@ const collectionReducer = (state = initialState, action) => {
             return { buffer: [...collection], tracks: collection };
         case ADD_TRACK:
             state.tracks.push(action.track);
-            return { buffer: [...state], tracks: state };
+            return { buffer: state.tracks, tracks: state.tracks };
         case DELETE_TRACK:
             const id = state.tracks.findIndex((track) => (track._id == action.id));
             state.tracks.splice(id, 1);
-            return { buffer: [...state], tracks: state };
+            return { buffer: state.tracks, tracks: state.tracks };
         case SORT_COLLECTION:
             const { prop, innerProp } = action;
             state.tracks.sort(sortProp(prop, innerProp))

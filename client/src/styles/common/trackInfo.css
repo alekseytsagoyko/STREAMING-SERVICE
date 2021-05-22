@@ -7,7 +7,6 @@
     border-radius: 5pt;
     background-color: gray;
     outline: none;
-    border: 1px solid gray;
 }
 
 .container {
@@ -21,10 +20,11 @@
     max-width: 100pt;
     font-size: 9pt;
     overflow: hidden;
+    /*font-weight: bold;*/
 }
 
 .title {
-    font-family: "Open Sans Semibold";
+    /*font-family: "Open Sans Semibold";*/
     cursor: pointer;
     max-width: 100pt;
     margin-right: auto;
@@ -33,7 +33,7 @@
 }
 
 .creator {
-    font-family: "Open Sans Semibold";
+    /*font-family: "Open Sans Semibold";*/
     color: fontColor;
     max-width: 100pt;
     white-space: nowrap;
